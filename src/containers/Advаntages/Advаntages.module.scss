@@ -1,0 +1,34 @@
+.advantages {
+  padding: 15rem 0;
+  background: var(--color-white);
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-rows: repeat(2 * 1fr);
+  grid-gap: 3rem 4rem;
+  color: var(--color-green-dark);
+}
+
+.item {
+  display: grid;
+  grid-template-areas:
+    "icon title"
+    "blank text";
+  grid-gap: 1.5rem 2.5rem;
+
+  h3 {
+    grid-area: title;
+    align-self: center;
+  }
+
+  p {
+    grid-area: text;
+  }
+}
+
+.icon {
+  grid-area: icon;
+  width: 4.5rem;
+  height: 4.5rem;
+  align-self: center;
+}

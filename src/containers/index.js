@@ -1,0 +1,5 @@
+export * from './Main/Main'
+export * from './Advаntages/Advаntages'
+export * from './Team/Team'
+export * from './Platforms/Platforms'
+export * from './Gallery/Gallery'

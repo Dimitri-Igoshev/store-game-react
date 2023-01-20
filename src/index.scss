@@ -1,0 +1,70 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-white-2: #F5F5F5;
+  --color-black: #000000;
+  --color-green-light: #61A568;
+  --color-green-dark: #425844;
+  --color-blue-dark: #101D2C;
+  --color-gray: #AAAAAA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+h1, h2, h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: var(--color-white);
+}
+
+h2 {
+  font-size: 4rem;
+  color: var(--color-gray);
+}
+
+h3 {
+  font-size: 1.9rem;
+  color: var(--color-green-dark);
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-green-light);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 113%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vh repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
